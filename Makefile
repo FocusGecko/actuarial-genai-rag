@@ -1,4 +1,4 @@
-.PHONY: install install-dev test lint format typecheck clean
+.PHONY: install install-dev test lint format typecheck pre-commit clean
 
 install:
 	uv sync
@@ -17,6 +17,10 @@ format:
 
 typecheck:
 	uv run mypy src/
+
+pre-commit:
+	uv run pre-commit install
+	uv run pre-commit run --all-files
 
 clean:
 	find . -type d -name __pycache__ -exec rm -rf {} +
