@@ -44,6 +44,13 @@ dev-dependencies = [
     "pytest-cov>=5.0.0",
     "ruff>=0.4.0",
     "mypy>=1.10.0",
+<<<<<<< HEAD
+=======
+    "pre-commit>=3.7.0",
+    "vulture>=2.14",
+    "bandit>=1.8.0",
+    "detect-secrets>=1.5.0",
+>>>>>>> 86ade3d (feat: add pre commit)
 ]
 
 [tool.ruff]
@@ -58,6 +65,13 @@ python_version = "3.11"
 strict = false
 ignore_missing_imports = true
 
+<<<<<<< HEAD
+=======
+[tool.bandit]
+exclude_dirs = ["tests"]
+skips = ["B101"]  # allow assert statements
+
+>>>>>>> 86ade3d (feat: add pre commit)
 [tool.hatch.build.targets.wheel]
 packages = ["src/actuarial_genai_rag"]
 
