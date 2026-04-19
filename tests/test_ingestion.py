@@ -1,8 +1,5 @@
 import pytest
-<<<<<<< HEAD
-=======
 
->>>>>>> 86ade3d (feat: add pre commit)
 from src.ingestion.chunker import chunk_text
 
 

@@ -51,12 +51,6 @@ dev = [
 
 [package.dev-dependencies]
 dev = [
-<<<<<<< HEAD
-    { name = "mypy" },
-    { name = "pytest" },
-    { name = "pytest-cov" },
-    { name = "ruff" },
-=======
     { name = "bandit" },
     { name = "detect-secrets" },
     { name = "mypy" },
@@ -65,7 +59,6 @@ dev = [
     { name = "pytest-cov" },
     { name = "ruff" },
     { name = "vulture" },
->>>>>>> 86ade3d (feat: add pre commit)
 ]
 
 [package.metadata]
@@ -97,12 +90,6 @@ provides-extras = ["dev"]
 
 [package.metadata.requires-dev]
 dev = [
-<<<<<<< HEAD
-    { name = "mypy", specifier = ">=1.10.0" },
-    { name = "pytest", specifier = ">=8.0.0" },
-    { name = "pytest-cov", specifier = ">=5.0.0" },
-    { name = "ruff", specifier = ">=0.4.0" },
-=======
     { name = "bandit", specifier = ">=1.8.0" },
     { name = "detect-secrets", specifier = ">=1.5.0" },
     { name = "mypy", specifier = ">=1.10.0" },
@@ -111,7 +98,6 @@ dev = [
     { name = "pytest-cov", specifier = ">=5.0.0" },
     { name = "ruff", specifier = ">=0.4.0" },
     { name = "vulture", specifier = ">=2.14" },
->>>>>>> 86ade3d (feat: add pre commit)
 ]
 
 [[package]]
@@ -390,8 +376,6 @@ wheels = [
 ]
 
 [[package]]
-<<<<<<< HEAD
-=======
 name = "bandit"
 version = "1.9.4"
 source = { registry = "https://pypi.org/simple" }
@@ -407,7 +391,6 @@ wheels = [
 ]
 
 [[package]]
->>>>>>> 86ade3d (feat: add pre commit)
 name = "bcrypt"
 version = "5.0.0"
 source = { registry = "https://pypi.org/simple" }
@@ -601,8 +584,6 @@ wheels = [
 ]
 
 [[package]]
-<<<<<<< HEAD
-=======
 name = "cfgv"
 version = "3.5.0"
 source = { registry = "https://pypi.org/simple" }
@@ -612,7 +593,6 @@ wheels = [
 ]
 
 [[package]]
->>>>>>> 86ade3d (feat: add pre commit)
 name = "charset-normalizer"
 version = "3.4.7"
 source = { registry = "https://pypi.org/simple" }
@@ -1025,8 +1005,6 @@ wheels = [
 ]
 
 [[package]]
-<<<<<<< HEAD
-=======
 name = "detect-secrets"
 version = "1.5.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1049,7 +1027,6 @@ wheels = [
 ]
 
 [[package]]
->>>>>>> 86ade3d (feat: add pre commit)
 name = "distro"
 version = "1.9.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1105,11 +1082,11 @@ wheels = [
 
 [[package]]
 name = "filelock"
-version = "3.28.0"
+version = "3.29.0"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/d6/17/6e8890271880903e3538660a21d63a6c1fea969ac71d0d6b608b78727fa9/filelock-3.28.0.tar.gz", hash = "sha256:4ed1010aae813c4ee8d9c660e4792475ee60c4a0ba76073ceaf862bd317e3ca6", size = 56474, upload-time = "2026-04-14T22:54:33.625Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/b5/fe/997687a931ab51049acce6fa1f23e8f01216374ea81374ddee763c493db5/filelock-3.29.0.tar.gz", hash = "sha256:69974355e960702e789734cb4871f884ea6fe50bd8404051a3530bc07809cf90", size = 57571, upload-time = "2026-04-19T15:39:10.068Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/3b/21/2f728888c45033d34a417bfcd248ea2564c9e08ab1bfd301377cf05d5586/filelock-3.28.0-py3-none-any.whl", hash = "sha256:de9af6712788e7171df1b28b15eba2446c69721433fa427a9bee07b17820a9db", size = 39189, upload-time = "2026-04-14T22:54:32.037Z" },
+    { url = "https://files.pythonhosted.org/packages/81/47/dd9a212ef6e343a6857485ffe25bba537304f1913bdbed446a23f7f592e1/filelock-3.29.0-py3-none-any.whl", hash = "sha256:96f5f6344709aa1572bbf631c640e4ebeeb519e08da902c39a001882f30ac258", size = 39812, upload-time = "2026-04-19T15:39:08.752Z" },
 ]
 
 [[package]]
@@ -1547,8 +1524,6 @@ wheels = [
 ]
 
 [[package]]
-<<<<<<< HEAD
-=======
 name = "identify"
 version = "2.6.19"
 source = { registry = "https://pypi.org/simple" }
@@ -1558,7 +1533,6 @@ wheels = [
 ]
 
 [[package]]
->>>>>>> 86ade3d (feat: add pre commit)
 name = "idna"
 version = "3.11"
 source = { registry = "https://pypi.org/simple" }
@@ -3118,8 +3092,6 @@ wheels = [
 ]
 
 [[package]]
-<<<<<<< HEAD
-=======
 name = "nodeenv"
 version = "1.10.0"
 source = { registry = "https://pypi.org/simple" }
@@ -3129,7 +3101,6 @@ wheels = [
 ]
 
 [[package]]
->>>>>>> 86ade3d (feat: add pre commit)
 name = "notebook"
 version = "7.5.5"
 source = { registry = "https://pypi.org/simple" }
@@ -3735,8 +3706,6 @@ wheels = [
 ]
 
 [[package]]
-<<<<<<< HEAD
-=======
 name = "pre-commit"
 version = "4.5.1"
 source = { registry = "https://pypi.org/simple" }
@@ -3753,7 +3722,6 @@ wheels = [
 ]
 
 [[package]]
->>>>>>> 86ade3d (feat: add pre commit)
 name = "prometheus-client"
 version = "0.25.0"
 source = { registry = "https://pypi.org/simple" }
@@ -4310,8 +4278,6 @@ wheels = [
 ]
 
 [[package]]
-<<<<<<< HEAD
-=======
 name = "python-discovery"
 version = "1.2.2"
 source = { registry = "https://pypi.org/simple" }
@@ -4325,7 +4291,6 @@ wheels = [
 ]
 
 [[package]]
->>>>>>> 86ade3d (feat: add pre commit)
 name = "python-docx"
 version = "1.2.0"
 source = { registry = "https://pypi.org/simple" }
@@ -4858,8 +4823,6 @@ wheels = [
 ]
 
 [[package]]
-<<<<<<< HEAD
-=======
 name = "stevedore"
 version = "5.7.0"
 source = { registry = "https://pypi.org/simple" }
@@ -4869,7 +4832,6 @@ wheels = [
 ]
 
 [[package]]
->>>>>>> 86ade3d (feat: add pre commit)
 name = "sympy"
 version = "1.14.0"
 source = { registry = "https://pypi.org/simple" }
@@ -5202,8 +5164,6 @@ wheels = [
 ]
 
 [[package]]
-<<<<<<< HEAD
-=======
 name = "virtualenv"
 version = "21.2.4"
 source = { registry = "https://pypi.org/simple" }
@@ -5228,7 +5188,6 @@ wheels = [
 ]
 
 [[package]]
->>>>>>> 86ade3d (feat: add pre commit)
 name = "watchfiles"
 version = "1.1.1"
 source = { registry = "https://pypi.org/simple" }
