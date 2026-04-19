@@ -28,14 +28,8 @@ using semantic search combined with a large language model.
 Requires [uv](https://docs.astral.sh/uv/).
 
 ```bash
-uv sync
+make install
 cp .env.example .env   # then fill in your API keys
-```
-
-Run notebooks:
-
-```bash
-uv run jupyter lab
 ```
 
 ## Roadmap
