@@ -43,7 +43,7 @@ class ChromaStore:
             ids=ids,
             embeddings=embeddings.tolist(),
             documents=documents,
-            metadatas=metadatas,
+            metadatas=metadatas,  # type: ignore[arg-type]
         )
 
     def search(
