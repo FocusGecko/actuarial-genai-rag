@@ -26,7 +26,6 @@ repos:
       - id: ruff
         args: ["--fix"]
       - id: ruff-format
-        args: ["--check"]
         exclude: ^notebooks/
 
   # Type checking
@@ -36,6 +35,7 @@ repos:
       - id: mypy
         additional_dependencies:
           - pydantic>=2.7.0
+          - types-PyYAML>=6.0.0
         args: ["--ignore-missing-imports"]
 
   # Dead code detection — disabled during early development

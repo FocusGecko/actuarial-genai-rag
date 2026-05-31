@@ -32,6 +32,21 @@ make install
 cp .env.example .env   # then fill in your API keys
 ```
 
+## Ingestion
+
+Run the ingestion pipeline to chunk, embed, and store documents in ChromaDB:
+
+```bash
+make ingest
+```
+
+This uses `config/ingestion.yaml` for all parameters (chunk size, overlap, embedding model, etc.).
+To use a custom config:
+
+```bash
+uv run python -m actuarial_genai_rag.pipeline.ingest config/my_config.yaml
+```
+
 ## Roadmap
 
 - [ ] EDA: corpus statistics (document count, language, length distribution)
