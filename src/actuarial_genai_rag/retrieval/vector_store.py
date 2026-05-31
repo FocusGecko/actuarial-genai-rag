@@ -34,7 +34,10 @@ class ChromaStore:
         """Upsert a batch of chunks with their embeddings."""
         ids = [f"chunk_{start_id + i}" for i in range(len(chunks))]
         documents = [c.text for c in chunks]
-        metadatas = [{k: str(v) for k, v in c.metadata.items()} for c in chunks]
+        metadatas: list[dict[str, str | int | float | bool]] = [
+            {k: v if isinstance(v, int | float | bool) else str(v) for k, v in c.metadata.items()}
+            for c in chunks
+        ]
 
         self.collection.upsert(
             ids=ids,
@@ -60,6 +63,10 @@ class ChromaStore:
 
         results = self.collection.query(**kwargs)
 
+        documents = results["documents"] or []
+        metadatas = results["metadatas"] or []
+        distances = results["distances"] or []
+
         return [
             {
                 "text": doc,
@@ -67,9 +74,9 @@ class ChromaStore:
                 "distance": dist,
             }
             for doc, meta, dist in zip(
-                results["documents"][0],
-                results["metadatas"][0],
-                results["distances"][0],
+                documents[0],
+                metadatas[0],
+                distances[0],
             )
         ]
 
