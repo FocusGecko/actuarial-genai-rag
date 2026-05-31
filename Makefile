@@ -1,4 +1,4 @@
-.PHONY: install install-dev test lint format typecheck pre-commit clean
+.PHONY: install install-dev test lint format typecheck pre-commit clean ingest
 
 install:
 	uv sync
@@ -27,3 +27,6 @@ clean:
 	find . -type d -name .pytest_cache -exec rm -rf {} +
 	find . -type d -name .mypy_cache -exec rm -rf {} +
 	find . -name "*.pyc" -delete
+
+ingest:
+	uv run python -m actuarial_genai_rag.pipeline.ingest config/ingestion.yaml

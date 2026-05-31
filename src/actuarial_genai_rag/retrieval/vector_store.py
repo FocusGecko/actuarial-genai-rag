@@ -1,11 +1,86 @@
-"""Vector store interface (ChromaDB backend)."""
+"""Vector store interface using ChromaDB."""
+
+import chromadb
+import numpy as np
+
+from actuarial_genai_rag.ingestion.chunker import Chunk
+from actuarial_genai_rag.ingestion.config import VectorStoreConfig
 
 
-def build_index(chunks: list[str], embeddings: list[list[float]]) -> None:
-    """Persist chunks and their embeddings to the vector store."""
-    raise NotImplementedError
+class ChromaStore:
+    """ChromaDB vector store for document chunks."""
 
+    def __init__(self, config: VectorStoreConfig):
+        self.config = config
+        self.client = chromadb.PersistentClient(path=config.persist_directory)
 
-def search(query_embedding: list[float], top_k: int = 5) -> list[str]:
-    """Return the top-k most similar chunks for a query embedding."""
-    raise NotImplementedError
+        if config.recreate:
+            try:
+                self.client.delete_collection(config.collection_name)
+            except (ValueError, chromadb.errors.NotFoundError):
+                pass
+
+        self.collection = self.client.get_or_create_collection(
+            name=config.collection_name,
+            metadata={"hnsw:space": config.distance},
+        )
+
+    def upsert_batch(
+        self,
+        chunks: list[Chunk],
+        embeddings: np.ndarray,
+        start_id: int = 0,
+    ) -> None:
+        """Upsert a batch of chunks with their embeddings."""
+        ids = [f"chunk_{start_id + i}" for i in range(len(chunks))]
+        documents = [c.text for c in chunks]
+        metadatas: list[dict[str, str | int | float | bool]] = [
+            {k: v if isinstance(v, int | float | bool) else str(v) for k, v in c.metadata.items()}
+            for c in chunks
+        ]
+
+        self.collection.upsert(
+            ids=ids,
+            embeddings=embeddings.tolist(),
+            documents=documents,
+            metadatas=metadatas,  # type: ignore[arg-type]
+        )
+
+    def search(
+        self,
+        query_embedding: np.ndarray,
+        top_k: int = 5,
+        where: dict | None = None,
+    ) -> list[dict]:
+        """Search for similar chunks."""
+        kwargs: dict = {
+            "query_embeddings": [query_embedding.tolist()],
+            "n_results": top_k,
+            "include": ["documents", "metadatas", "distances"],
+        }
+        if where:
+            kwargs["where"] = where
+
+        results = self.collection.query(**kwargs)
+
+        documents = results["documents"] or []
+        metadatas = results["metadatas"] or []
+        distances = results["distances"] or []
+
+        return [
+            {
+                "text": doc,
+                "metadata": meta,
+                "distance": dist,
+            }
+            for doc, meta, dist in zip(
+                documents[0],
+                metadatas[0],
+                distances[0],
+            )
+        ]
+
+    @property
+    def count(self) -> int:
+        """Return the number of items in the collection."""
+        return self.collection.count()
