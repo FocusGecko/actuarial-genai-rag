@@ -8,3 +8,7 @@ RAG_USER_TEMPLATE = """Context:
 {context}
 
 Question: {question}"""
+
+NAIVE_SYSTEM_PROMPT = """Tu es un assistant expert en actuariat et en assurance.
+Réponds aux questions de manière claire, précise et pédagogique en français.
+Si tu n'es pas sûr d'une information, indique-le explicitement."""
