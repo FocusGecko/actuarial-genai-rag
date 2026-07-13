@@ -1,0 +1,12 @@
+/* Hide Chainlit branding */
+a[href="https://github.com/Chainlit/chainlit"] {
+    display: none !important;
+}
+
+/* Welcome screen title */
+.MuiTypography-h4 {
+    font-weight: 700 !important;
+    background: linear-gradient(135deg, #e94560 0%, #0f3460 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
