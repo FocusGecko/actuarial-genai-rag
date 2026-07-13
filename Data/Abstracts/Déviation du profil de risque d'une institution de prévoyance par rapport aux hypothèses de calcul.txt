@@ -1,0 +1,5 @@
+La réforme Solvabilité II, qui est entrée en vigueur au 1er janvier 2016, a pour but d'harmoniser et d'améliorer les règles garantissant la solvabilité des sociétés d'assurance européennes, notamment par la définition d'un capital de solvabilité requis (SCR) que chaque société doit pouvoir couvrir avec ses fonds propres.
+
+Le processus ORSA (Own Risk and Solvency Assessment), introduit dans le deuxième pilier de la réforme, demande en particulier à chaque société d'assurance de mesurer l'écart entre son profil de risque et les hypothèses de calcul du SCR. L'objectif de ce mémoire est de proposer et appliquer des méthodes de mesure de cet écart pour les risques les plus significatifs en termes de SCR dans le cas d'une institution de prévoyance;
+
+Les risques abordés ici sont le risque action, le risque de spread, le risque opérationnel et le risque de primes et de réserve.

@@ -1,0 +1,9 @@
+Dans ce mémoire, nous proposons d'utiliser différentes méthodologies pour déterminer la prime pure à des fins de tarification pour un assuré d'un contrat d'assurance en santé collective et de connaître les paramètres influents. 
+
+Cette étude est menée sur deux portefeuilles différents et sur deux types de montants (en frais réels et en montant remboursé par la mutuelle). Nous exploitons la théorie des modèles linéaires généralisés qui sont paramétriques et celle de l'algorithme de Machine Learning eXtreme Gradient Boosting qui est non-paramétrique. 
+
+Nous proposons deux méthodes pour notre modélisation avec les modèles linéaires généralisés. Dans un premier temps, nous modélisons avec une régression Tweedie tous postes confondus sans décomposition du risque ce qui revient à modéliser la prime pure. Dans un second temps, nous considérons que chaque sous-poste possède une consommation unique avec des paramètres influents différents. Ainsi, nous modélisons la prime pure avec une approche fréquence-coût moyen par sous-poste. En ce qui concerne la méthode non-paramétrique nous modélisons la prime pure avec l'eXtreme Gradient Boosting. 
+
+Dans un contexte d'utilisation en entreprise, nous avons développé une application R Shiny permettant de modéliser la prime pure pour un assuré en fonction de ses caractéristiques pour certaines méthodes choisies.
+
+Mots clés : Assurance Santé, Modèles Linéaires Généralisés, Santé Collective, Régression Tweedie, Approche Fréquence-coût moyen, Machine Learning, GLM, XGBoost, R Shiny, Prime Pure, Remboursement de la part de la mutuelle, frais réels.

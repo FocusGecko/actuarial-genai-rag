@@ -1,0 +1,6 @@
+Mots clés : risque cyber, proie-prédateur, lissage Whittaker-Henderson, tarification, indice de risque
+
+Le risque cyber impose de nouveaux défis aux assureurs. Parmi ces derniers, les questions de tarification sont une préoccupation majeure car les conséquences financières ne sont pas anodines. Aujourd’hui, la problématique d’assurabilité de ce risque est encore très présente chez les assureurs au vu du manque de connaissance et de gestion du risque cyber. 
+Cette étude consiste à élaborer une méthode de tarification basée sur la création d’un indice de risque qui sera exclusivement construit à l’aide de la sinistralité observée d’un portefeuille d’assurés. 
+Ce modèle est fondé sur l’approche proie-prédateur (Lotka-Volterra), dont l’implémentation nécessite le calibrage de plusieurs paramètres. Une fois ce dernier implémenté, une méthode de tarification basique sera élaborée permettant la détermination des primes par police cyber. 
+Dès lors que les primes auront été déterminées, une analyse de sensibilité sur les différentes hypothèses sera effectuée. En effet, un certain nombre d’hypothèses ont été prises par manque de données. C’est pourquoi, nous rediscuterons de ces dernières dans une dernière partie.

@@ -1,0 +1,7 @@
+Depuis le début des années 2000, la stabilité de plusieurs assureurs a été fragilisée par un environnement économique difficile. En effet, l'effondrement des marchés boursiers, la baisse des rendements des obligations ainsi que la crise financière de 2007-2008 ont considérablement réduit la valeur des placements financiers.
+
+Cette situation a entraîné des modifications dans la réglementation des assureurs comme la valorisation des actifs en valeur de marché, des passifs estimés à leur Best Estimate ainsi qu'une exigence en capital reflétant au mieux les risques de souscription.
+
+Même si les deux régimes assurantiels possèdent de multiples similitudes, des divergences existent en matière d'évaluation du risque ce qui entraîne des exigences en capital différentes pour une compagnie soumise aux deux cadres réglementaires. Quelles sont les divergences en terme de calcul d'exigence de marge pour le risque de souscription non-vie ? Quelles sont les incidences sur le pilotage d'une compagnie française filiale d'un groupe suisse ?
+
+D'abord, ce mémoire présentera les caractéristiques et les fondements de Solvabilité II et du SST en terme d'assurance non vie. Ensuite, la comparaison théorique et appliquée du risque d'assurance non vie formule standard sera présentée. Ce mémoire terminera par illustrer à travers un exemple l'incidence sur le pilotage sous la contrainte de deux cadre réglementaires différents.

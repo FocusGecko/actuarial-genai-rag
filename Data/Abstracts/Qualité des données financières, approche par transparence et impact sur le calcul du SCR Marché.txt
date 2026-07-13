@@ -1,0 +1,7 @@
+Afin de garantir un reflet fidèle des engagements des assureurs et des risques auxquels sont exposés leurs portefeuilles, deux exigences règlementaires sont mises en avant dans la directive européenne Solvabilité II : d'une part la qualité des données, celles-ci devant être exhaustives, exactes et appropriées ; et d'autre part la transparisation des fonds qui consiste à détailler chaque ligne de fonds du portefeuille d'actifs.
+
+C'est en respectant ces aspects que doit se calculer le capital de solvabilité requis (Solvency Capital Requirement - SCR) et notamment le module Marché concerné par les données financières. La problématique traitée dans ce mémoire est donc la suivante : dans quelle mesure la qualité des données financières et la transparisation impactent-elles le calcul du SCR Marché ?
+
+L'harmonisation de l'échange des données est possible grâce au format de la matrice Tri-Partite du club Ampère. Un processus a ainsi pu être automatisé pour le traitement des données financières externes. Son aboutissement est l'obtention du portefeuille d'actifs en vision transparisée qui sert de base pour le calcul du SCR Marché.
+
+Ce calcul nécessite de faire un certain nombre d'hypothèses, liées à une mauvaise qualité  des données ou à la non-transparisation de certains fonds. Parmi ces hypothèses, une étude particulière sur les méthodes d'imputation de valeurs manquantes est menée. C'est en faisant varier ces hypothèses et en considérant de multiples scénarii que leur impact est étudié ici.
