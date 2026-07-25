@@ -77,6 +77,7 @@ target/
 
 # Jupyter Notebook
 .ipynb_checkpoints
+.chainlit
 
 # IPython
 profile_default/
@@ -141,6 +142,7 @@ celerybeat.pid
 
 # ChromaDB local store
 data/chromadb/
+Data/
 env/
 venv/
 ENV/
