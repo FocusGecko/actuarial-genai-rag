@@ -41,6 +41,7 @@ dependencies = [
     "scikit-learn>=1.8.0",
     "spacy>=3.8.14",
     "bertopic>=0.17.4",
+    "nltk>=3.10.0",
 ]
 
 [project.optional-dependencies]
